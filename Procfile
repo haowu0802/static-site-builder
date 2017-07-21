@@ -1,1 +1,1 @@
-web: python prototypes runserver
+web: python prototypes.py runserver
