@@ -1,1 +1,1 @@
-web: gunicorn prototypes
+web: python prototypes runserver
