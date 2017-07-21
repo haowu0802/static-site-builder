@@ -1,1 +1,1 @@
-web: gunicorn cardgen
+web: gunicorn prototypes
