@@ -40,6 +40,11 @@ settings.configure(
     STATICFILES_STORAGE='django.contrib.staticfiles.storage.CachedStaticFilesStorage'  # for storing compressed static
 )
 
+from django.core.wsgi import get_wsgi_application  # wsgi application for prod server, usually in wsgi.py
+from whitenoise.django import DjangoWhiteNoise  # for serving static files in Heroku
+
+application = get_wsgi_application()  # init wsgi app
+application = DjangoWhiteNoise(application)  # add whitenoise static file support
 
 """
 entry point
