@@ -1,0 +1,41 @@
+<!-- top wide banner -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome To the Site</h1>
+    <p>Insert marketing copy here.</p>
+  </div>
+</div>
+
+<!-- middle content -->
+<div class="container">
+
+  <!-- first row content -->
+  <div class="row">
+    <!-- first row left 6 About -->
+    <div class="col-md-6">
+      <h2>About</h2>
+      <p>{% lorem %}</p>
+    </div>
+    <!-- first row right 6 Contact -->
+    <div class="col-md-6">
+      <h2>Contact</h2>
+      <p>{% lorem %}</p>
+      <p>
+        <a class="btn btn-default"
+           href="{% url 'page' 'contact' %}" role="button">
+          Contact us »
+        </a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- bottom boiler plate -->
+<hr>
+
+<footer>
+  <div class="container">
+    <p>&copy; Hao Wu {% now 'Y' %}</p>
+  </div>
+</footer>
